@@ -1,51 +1,74 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# use collections to realize category
+collections:
+  my_categories:
+    output: true
+    permalink: /blog/category/:name/
+  my_tags:
+    output: true
+    permalink: /blog/tag/:name/  
+#sidebar names
+sidebar:
+  home:              主页
+  about:             关于
+  articles:          文章
+  programming:       编程
+  essay:             随笔
 
-title: XingChao Long 个人博客
-email: z15881614642@163.com
-description: >- # 正在一点点的建立和完善
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.fhlxc.com" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: fhlxc
+# Permalinks
+permalink:           pretty
 
-# Build settings
-theme: minima
-plugins:
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+excerpt_separator: "\n\n\n"
+
+# Setup
+title:               Xingchao Long
+name:                Xingchao Long
+namecn:              龍
+tagline:             '的博客'
+description:         "个人博客"
+url:                 https://www.fhlxc.com
+baseurl:             ''
+gems:
   - jekyll-feed
+  - jekyll-seo-tag
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# About/contact
+author:
+  name:              Xingchao Long
+  url:               https://www.fhlxc.com
+  email:             z15881614642@163.com
+
+sass:
+  style: compressed
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+      type: my_categories
+    values:
+      layout: blog_by_category
+  
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: blog_by_tag
+    
+# Custom vars
+version:             1.0.0
