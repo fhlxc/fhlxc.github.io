@@ -1,42 +1,58 @@
-permalink   : /:categories/:year/:title/
-markdown    : kramdown
-highlighter : pygments
+# Site settings
+title: XingChao Long的个人博客
+header-img: "img/Xacebook.jpg"
+tagline: "cn"  
+description: "XingChao Long的个人博客"  
+baseurl: ""
+url: "https://www.fhlxc.com"  
 
-paginate: 2 #6
-comments: true
-paginate_path: "/page/:num"
+# About/contact
+owner: 
+  name: "XingChao Long"
+  email: z15881614642@163.com
+  bio: "XingChao Long的个人博客"
 
-source: source
-destination: _site
-sass:
-  sass_dir: _scss
-  style: compressed
+# Data
+gavatar: img/favicon1.ico
+favicon: img/favicon1.ico
 
-cover: /assets/images/default-cover.png
+douban_username: cnfeat
+twitter_username: feat
+github_username: cnfeat
+facebook_username: 
+weibo_username: cnfeat 
+zhihu_username: feat
 
-# site title, description, meta_description, meta_keywords
-# Details for the RSS feed generator
-name: Mug Jekyll theme
-title: Mug
-description: "A free Jekyll theme for download"
-keywords: "Jekyll, theme, mug, free, download, SEO, blog, web"
-url: http://nandomoreira.me
-baseurl: "/mug"
-domain_name: nandomoreira.me
-# google_analytics: UA-52446115-1
-repo: http://github.com/nandomoreirame/mug
-disqus_shortname: "nandothemes"
+# Build settings  
+# use Github Flavored Markdown !important  
+# document: http://jekyllrb.com/docs/configuration/#kramdown  
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 15
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+gems: [jekyll-paginate]
 
-author:
-  name      : Fernando Moreira
-  image     : /assets/images/author.jpg
-  email     : nandomoreira.me@gmail.com
-  url       : http://nandomoreira.me
-  facebook  : http://facebook.com/fernando.dev
-  twitter   : http://twitter.com/nandomoreirame
-  instagram : http://instagram.com/nandomoreira.me
-  github    : http://github.com/nandomoreirame
-  linkedin  : http://linkedin.com/in/nandomoreirame
-  bio       : "Desenvolvedor Front-end/Wordpress entusiasta de performance, design responsivo e usabilidade, sempre em busca do melhor projeto e de um bom café."
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai
 
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
+# Defaults for posts
+defaults:
+    scope: 
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "CNFeat"
+      header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
+
+# Comments 
+
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: UA-80884545-1
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in footer navigation

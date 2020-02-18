@@ -1,62 +1,54 @@
-# mug
+## 说明
 
-Jekyll theme
+此博客 fork 自 [Azeril](http://azeril.me/)，感谢。
 
-> :warning:
-  This theme requires ruby and rubygems installed
+## 读立写生
 
-* [x] Clean layout
-* [x] Resposive layout
-* [x] Preprocessor SASS
-* [x] CSS minified
-* [x] Search posts
-* [x] Pagination
-* [x] Syntax highlight
-* [x] Author config
-* [x] Share posts
-* [x] Comments with Disqus
+我是陈素封，博客：[cnfeat.com](cnfeat.com)
 
----
+每天千字践行者，践行时间：2014年02月10日至2014年02月23日，感谢这段经历，让我成为了现在的我。
 
-### Start in 4 steps
+现在研习 **认知写作学** 。
 
-1. Download or clone repo `git clone git@github.com:nandomoreirame/mug.git`
-2. Enter the folder: `cd mug/`
-3. Install Ruby gems: `bundle install`
-4. Start Jekyll server: `jekyll serve`
+## 坚信
 
-Access, [localhost:4000/mug](http://localhost:4000/mug)
 
-### Deploy in Github pages in 2 steps
+- 元认知乃一切之源
+- 学苟知本，六经皆我注脚 
+- 一切技能皆可习得，包括写作
+- 「持续」并不是坚持，写就是最好的回报
 
-1. Change the variables `GITHUB_REPONAME` and `GITHUB_REPO_BRANCH` in `Rakefile`
-2. Run `rake` or `rake publish` for build and publish on Github
 
----
+## 赞赏
 
-### Using Rake tasks
 
-* Create a new page: `rake page name="contact.md"`
-* Create a new post: `rake post title="TITLE OF THE POST"`
+如果内容对你有帮助，那就买盒卡片助我继续分享吧 (＾－＾)
 
----
+![](https://s2.ax1x.com/2019/03/16/AZUnVU.png)
 
-### Demo and Download
+### Changelog
 
-[Demo](https://nandomoreirame.github.io/mug/)
-[Download](https://github.com/nandomoreirame/mug/archive/master.zip)
 
-![mug - free Jekyll theme](/screenshot.png)
+- 2019-08-12
+	+ 删去 Gitment
+	+ 在 post.html 增加 utterances 评论
+- 2019-01-27
+	+ Gitment 踩坑备忘：
+	+ repo 名字而不是地址
+	+ GitHub name 大小写，有大小写的，建议全部改成小写
+	+ [出现 Object ProgressEvent，解决gitment无法登陆评论问题（Object ProgressEvent）](https://blog.csdn.net/wardseptember/article/details/82828391)
+- 20160719 
+	+ 改动网页文字宽度
+		+ post.html 39
+		+ col-lg-7 col-lg-offset-3 col-md-8 col-md-offset-2 post-container
+	+ about 链接颜色
+- 20160717 博客优化
+	- 增加 Google Analytics
+	* 修订 Gavatar 地址
+	* 增加作品集 works
+	* 缩短首页摘要为 70 字
+	* 多说替换成 disqus
+	* 置换字体
 
----
-
-### Copyright and license
-
-It is under [the MIT license](/LICENSE).
-
-> :warning:
-  Please remove metas `<meta name="robots" content="noindex">` and `<meta name="googlebot" content="noindex">` in `_layouts/default.html`
-
-Enjoy :yum:
 
 
