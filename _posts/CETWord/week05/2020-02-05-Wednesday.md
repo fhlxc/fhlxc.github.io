@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: week05 星期三  
-category: English  
+category: english  
 tag: word  
 ---
 ### 2020年2月5日 单词

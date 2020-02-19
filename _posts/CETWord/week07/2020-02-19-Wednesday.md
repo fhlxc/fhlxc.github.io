@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: week07 星期三  
-category: English  
+category: english  
 tag: word  
 ---
 ### 2020年02月18日 单词

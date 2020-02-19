@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: week04 星期三  
-category: English  
+category: english  
 tag: word  
 ---
 ### 2020年1月29日 单词

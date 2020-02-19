@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: week06 星期三  
-category: English  
+category: english  
 tag: word  
 ---
 ### 2020年2月12日 单词
