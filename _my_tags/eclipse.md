@@ -1,4 +1,0 @@
----
-slug: eclipse  
-name: Eclipse  
----
